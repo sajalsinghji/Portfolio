@@ -1,5 +1,31 @@
 import React, { Component } from 'react'
 
+
+import RetroHitCounter from 'react-retro-hit-counter';
+
+class Counter extends Component {
+
+  render() {
+   return <RetroHitCounter
+    hits={12}
+    /* The following are all default values: */
+    withBorder={false}
+    withGlow={false}
+    minLength={4}
+    size={20}
+    padding={1}
+    digitSpacing={3}
+    segmentThickness={4}
+    segmentSpacing={0.5}
+    segmentActiveColor="#76FF03"
+    segmentInactiveColor="#315324"
+    backgroundColor="black"
+    borderThickness={5}
+    glowStrength={0.2}
+
+  />
+  }
+}
 export default class Sidebar extends Component {
   render() {
     return (
@@ -8,7 +34,7 @@ export default class Sidebar extends Component {
           <nav href="#navbar" className="js-colorlib-nav-toggle colorlib-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i /></nav>
           <aside id="colorlib-aside" className="border js-fullheight">
             <div className="text-center">
-              <div className="author-img" style={{backgroundImage: 'url(images/Sajal.jpg)'}} />
+              <div className="author-img" style={{backgroundImage: 'url(./images/img-1.jpg)'}} />
               <h1 id="colorlib-logo"><a href="index.html">Sajal Singh</a></h1>
               <span className="email"><i className="icon-mail"></i> sajalsinghji@gmail.com</span>
             </div>
@@ -28,7 +54,7 @@ export default class Sidebar extends Component {
                 <li><a href="https://www.facebook.com/sajal.singh" target="_blank" rel="noopener noreferrer"><i className="icon-facebook2" /></a></li>
                 <li><a href="https://www.instagram.com/sajalji/?hl=en" target="_blank" rel="noopener noreferrer"><i className="icon-instagram" /></a></li>
                 <li><a href="https://www.linkedin.com/in/sajal-singh-9b1282137/" target="_blank" rel="noopener noreferrer"><i className="icon-linkedin2" /></a></li>
-                <li><a href="https://github.com/sajalsinghji" target="_blank" rel="noopener noreferrer"><i className="icon-github"></i></a></li>
+                <li><a href="https://github.com/sajalsingh12" target="_blank" rel="noopener noreferrer"><i className="icon-github"></i></a></li>
               </ul>
             </nav>
             <div className="colorlib-footer">
@@ -40,6 +66,9 @@ export default class Sidebar extends Component {
                 Something coming soon !!
               </small></p>
             </div>
+            <div className="counter-class">
+             < Counter  />
+        </div>
           </aside>
         </div>
       </div>

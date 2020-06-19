@@ -88,12 +88,6 @@ samsung-product-api-reference.</p>
                       </div>
                     </div>
                   </article>
-                  <article className="timeline-entry begin animate-box" data-animate-effect="fadeInBottom">
-                    <div className="timeline-entry-inner">
-                      <div className="timeline-icon color-none">
-                      </div>
-                    </div>
-                  </article>
                 </div>
               </div>
             </div>
